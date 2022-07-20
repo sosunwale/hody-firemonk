@@ -122,10 +122,10 @@
 					"gigantic": "clamp(3rem, 6vw, 4rem)"
 				},
 				"lineHeight": {
-					"medium": 1.4,
-					"normal": 1.6,
+					"medium": 1.3999999999999999,
+					"normal": 1.6000000000000001,
 					"small": 1.2,
-					"tiny": 1.15
+					"tiny": 1.1499999999999999
 				}
 			}
 		},
