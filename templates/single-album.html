@@ -1,0 +1,79 @@
+<!-- wp:template-part {"slug":"header-dark"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}},"backgroundColor":"background","textColor":"foreground","layout":{"inherit":true}} -->
+<main class="wp-block-group has-foreground-color has-background-background-color has-text-color has-background" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"4em","bottom":"6em"}},"border":{"bottom":{"color":"var:preset|color|separator","width":"1px"}}},"layout":{"inherit":false}} -->
+<div class="wp-block-group alignwide" style="padding-top:4em;padding-bottom:6em"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-center" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><!-- wp:column {"verticalAlignment":"center","style":{"spacing":{"padding":{"right":"20px","left":"20px"}}},"layout":{"contentSize":"512px"}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="padding-right:20px;padding-left:20px"><!-- wp:post-featured-image {"className":"album-image"} /--></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","style":{"spacing":{"padding":{"right":"20px","left":"20px"}}}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="padding-right:20px;padding-left:20px"><!-- wp:post-title {"level":1,"style":{"typography":{"lineHeight":"2","textTransform":"uppercase","fontStyle":"normal","fontWeight":"700"}}} /-->
+
+<!-- wp:paragraph {"lock":{"move":false,"remove":true}} -->
+<p>[rwmb_meta id="hody_discog_album_introduction"]</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"25px","padding":{"top":"20px","bottom":"20px"}},"typography":{"lineHeight":"2"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="line-height:2;padding-top:20px;padding-bottom:20px"><!-- wp:paragraph -->
+<p>[rwmb_meta id="hody_discog_album_producer"]</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:jet-engine/dynamic-field {"dynamic_field_source":"meta","dynamic_field_post_meta_custom":"hody_discog_album_release_date","dynamic_field_filter":true,"filter_callback":"date","date_format":"F, Y","className":" jet-sm-gb-wrapper jet-sm-gb-21d0590a-0474-4264-8913-450827682e66"} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:shortcode -->
+[album-platform-icons]
+<!-- /wp:shortcode --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"8em","bottom":"8em","right":"20px","left":"20px"}},"border":{"bottom":{"color":"var:preset|color|separator","width":"1px"}}},"layout":{"inherit":false}} -->
+<div class="wp-block-group alignwide" style="padding-top:8em;padding-right:20px;padding-bottom:8em;padding-left:20px"><!-- wp:heading {"style":{"typography":{"textTransform":"uppercase","lineHeight":"2"}}} -->
+<h2 style="line-height:2;text-transform:uppercase">Tracklist</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"100%"} -->
+<div class="wp-block-column" style="flex-basis:100%"><!-- wp:shortcode {"lock":{"move":false,"remove":true}} -->
+[album-tracklist-modern]
+<!-- /wp:shortcode --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"5em","bottom":"5em","right":"20px","left":"20px"}},"border":{"bottom":{"color":"var:preset|color|separator","width":"1px"}}},"layout":{"inherit":false}} -->
+<div class="wp-block-group alignwide" style="padding-top:5em;padding-right:20px;padding-bottom:5em;padding-left:20px"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"20px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group" style="padding-bottom:20px"><!-- wp:heading {"style":{"typography":{"textTransform":"uppercase","lineHeight":"2"}}} -->
+<h2 style="line-height:2;text-transform:uppercase">Other Albums</h2>
+<!-- /wp:heading -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"width":75,"style":{"border":{"radius":"0px"},"typography":{"textTransform":"uppercase"}},"className":"is-style-outline","fontFamily":"syncopate"} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-75 is-style-outline has-syncopate-font-family" style="text-transform:uppercase"><a class="wp-block-button__link" href="/album" style="border-radius:0px">All Albums</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"3em"}},"border":{"radius":"16px"}},"layout":{"inherit":true}} -->
+<div class="wp-block-group alignwide" style="border-radius:16px;margin-top:3em"><!-- wp:query {"queryId":9,"query":{"perPage":3,"pages":"3","offset":"0","postType":"album","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]},"displayLayout":{"type":"flex","columns":3},"align":"wide","layout":{"inherit":false}} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"align":"wide"} -->
+<!-- wp:post-featured-image {"isLink":true,"className":"album-image","style":{"color":[]}} /-->
+
+<!-- wp:post-title {"level":3,"style":{"typography":{"textTransform":"uppercase"}}} /-->
+
+<!-- wp:read-more {"content":"Listen Now\u003ca role=\u0022document\u0022 aria-multiline=\u0022true\u0022 aria-label=\u0022Block: Read More\u0022 class=\u0022block-editor-rich-text__editable block-editor-block-list__block wp-block is-selected remove-outline wp-block-read-more rich-text\u0022 id=\u0022block-ae382a13-a6f6-4c4d-b767-06e64d12570a\u0022 tabindex=\u00220\u0022 data-block=\u0022ae382a13-a6f6-4c4d-b767-06e64d12570a\u0022 data-title=\u0022Read More\u0022 style=\u0022background-color: initial; min-width: 1px; display: inline !important;\u0022 data-type=\u0022core/read-more\u0022\u003e\u003c/a\u003e","style":{"typography":{"textDecoration":"underline"}},"textColor":"foreground","className":"hody-animation-float"} /-->
+<!-- /wp:post-template -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph {"placeholder":"Add text or blocks that will display when the query returns no results."} -->
+<p>No more albums!.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

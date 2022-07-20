@@ -1,0 +1,57 @@
+<!-- wp:template-part {"slug":"header-dark"} /-->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"2em","right":"20px","left":"20px"}}},"backgroundColor":"background","textColor":"foreground","layout":{"inherit":true}} -->
+<div class="wp-block-group has-foreground-color has-background-background-color has-text-color has-background" style="padding-top:2em;padding-right:20px;padding-left:20px"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"padding":{"right":"20px","left":"20px"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center" style="padding-right:20px;padding-left:20px"><!-- wp:column {"verticalAlignment":"center","width":"40%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:40%"><!-- wp:post-featured-image {"className":"image-with-border-radius"} /-->
+
+<!-- wp:spacer {"height":"28px"} -->
+<div style="height:28px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"60%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:60%"><!-- wp:group {"className":"single-track-details rhs-content-group-with-padding"} -->
+<div class="wp-block-group single-track-details rhs-content-group-with-padding"><!-- wp:post-title {"textAlign":"left","level":1} /-->
+
+<!-- wp:jet-engine/dynamic-meta {"date_enabled":false,"date_format":"","comments_enabled":false} /-->
+
+<!-- wp:jet-engine/dynamic-field {"dynamic_field_source":"meta","dynamic_field_post_meta_custom":"hody_discog_track_artist","field_tag":"h5"} /-->
+
+<!-- wp:shortcode -->
+[track-platform-icons]
+<!-- /wp:shortcode --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"4em","top":"20px","right":"20px","left":"20px"}},"border":{"bottom":{"color":"var:preset|color|separator","width":"1px"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide" style="border-bottom-color:var(--wp--preset--color--separator);border-bottom-width:1px;padding-top:20px;padding-right:20px;padding-bottom:4em;padding-left:20px"><!-- wp:jet-engine/dynamic-field {"dynamic_field_source":"meta","dynamic_field_post_meta_custom":"hody_discog_track_sample_audio","dynamic_field_custom":true,"dynamic_field_format":"\u003caudio controls class=\u0022sample-track\u0022 src=\u0022%s\u0022\u003e\u003c/audio\u003e","className":"single-track-player"} /-->
+
+<!-- wp:paragraph -->
+<p class="">Share</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"4em","bottom":"5em","right":"20px","left":"20px"}},"border":{"bottom":{"color":"var:preset|color|separator","width":"1px"}}},"backgroundColor":"background","textColor":"foreground","layout":{"inherit":true}} -->
+<div class="wp-block-group alignwide has-foreground-color has-background-background-color has-text-color has-background" style="border-bottom-color:var(--wp--preset--color--separator);border-bottom-width:1px;padding-top:4em;padding-right:20px;padding-bottom:5em;padding-left:20px"><!-- wp:group {"align":"wide"} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"style":{"typography":{"textTransform":"uppercase","lineHeight":"2"}},"className":"with-bottom-margin","boldblocks":{"withIcon":{"icon":"","iconURI":""},"withTextShadow":[],"withTransform":[]}} -->
+<h2 class="with-bottom-margin" style="line-height:2;text-transform:uppercase">Other tracks in [mb_relationships id="tracks-to-album" direction="from" mode="inline"]</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"100%"} -->
+<div class="wp-block-column" style="flex-basis:100%"><!-- wp:shortcode {"lock":{"move":false,"remove":true}} -->
+[related-tracks-modern]
+<!-- /wp:shortcode --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->
+
+<!-- wp:html -->
+<script type="text/javascript">const players = Plyr.setup('.sample-track');</script>
+<!-- /wp:html -->

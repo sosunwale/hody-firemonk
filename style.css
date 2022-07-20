@@ -1,0 +1,73 @@
+/*
+Theme Name: Fire Monk - Block Theme
+Theme URI: https://hodessy.com/works
+Author: the Hodessy team
+Author URI: https://hodessy.com/
+Description: The core theme for BST sites network. Houses custom platform features and sitewide elements like blocks, patterns etc.
+Version: 0.1_beta
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: hody-firemonk
+*/
+/* This stylesheet is used for mobile only styles. Out funny way of mobile first design implementation */
+@media only screen and (max-width: 669px) {
+
+     /* Theme Header and Hero */
+     .wp-block-cover.is-header-underlay-hero {
+        margin-top: -40%;
+    }
+    /* Patterns and Templates */
+    .rhs-content-group-with-padding {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+
+    .lhs-content-group-with-padding {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+}
+@media (min-width: 670px) and (max-width: 905px) {
+
+    /* Patterns and Templates */
+    .rhs-content-group-with-padding {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+
+    .lhs-content-group-with-padding {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+
+
+    /* Theme Header and Hero */
+    .wp-block-cover.is-header-underlay-hero {
+        margin-top: -20%;
+    }
+}
+
+
+@media (min-width: 905px) and (max-width: 1270px) {
+
+    /* Patterns and Templates */
+    .rhs-content-group-with-padding {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+
+    .lhs-content-group-with-padding {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+
+
+    /* Theme Header and Hero */
+    .wp-block-cover.is-header-underlay-hero {
+        margin-top: -14%;
+    }
+}
+

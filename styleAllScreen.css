@@ -1,0 +1,114 @@
+/*
+Theme Name: Fire Monk - Block Theme
+Theme URI: https://hodessy.com/works
+Author: the Hodessy team
+Author URI: https://hodessy.com/
+Description: The core theme for BST sites network. Houses custom platform features and sitewide elements like blocks, patterns etc.
+Version: 0.1_beta
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: hody-firemonk
+*/
+
+h4 {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+.with-bottom-margin {
+    margin-bottom: 20px !important;
+}
+.has-border-radius {
+    border-radius: 16px;
+}
+.image-with-border-radius .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    border-radius: 12px;
+}
+/* Styling Footer */
+.is-footer-social-links .wp-social-link {
+    padding: 0.9rem;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: var(--wp--preset--color--separator);
+    border-radius: 0;
+    color: var(--wp--preset--color--foreground) !important;
+}
+.is-footer-social-links .wp-social-link:hover {
+    background: var(--wp--preset--color--foreground) !important;
+    color: var(--wp--preset--color--background) !important;
+}
+
+/* Style Button */
+.wp-block-buttons>.wp-block-button .wp-block-button__link {
+    /* width: 100%; */
+    box-shadow: 8px 8px 0px 0px var(--wp--preset--color--foreground);
+    border-style: solid;
+}
+
+.wp-block-buttons>.wp-block-button .wp-block-button__link:hover {
+    /* width: 100%; */
+    color: var(--wp--preset--color--background) !important ;
+    background: var(--wp--preset--color--foreground);
+    box-shadow: 8px 8px 0px 0px var(--wp--preset--color--primary);
+    border-style: solid;
+}
+/* 
+Global Theme Styles
+*/
+/* Header and Header Hero */
+.is-transparent-header *, .is-transparent-header > * {
+    z-index: 1;
+}
+
+.is-header-underlay-hero {
+    z-index: 0;
+}
+.wp-block-cover.is-header-underlay-hero {
+    margin-top: -9%;
+}
+
+/* Animations on hover */
+.hody-animation-float {
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.hody-animation-float:hover {
+    transform: translateY(-8px);
+}
+
+/*Pattern Styles*/
+.hody-firemonk-background-title {
+    font-size: var(--wp--custom--typography--font-size--colossal);
+    /* color: var(--wp--preset--color--separator); */
+}
+.hody-firemonk-title-group-pattern .hody-position-absolute {
+    top: -50px;
+    left: -10px;
+}
+.hody-position-relative {
+    position: relative;
+}
+.hody-position-absolute {
+    position: absolute;
+}
+.icon-box--has-box-shadow {
+    box-shadow: 8px 8px 0px 0px var(--wp--preset--color--foreground);
+}
+div#video-list {
+    height: 320px;
+    width: auto;
+    margin: 20px auto;
+    border-radius: 16px;
+}
+
+.rhs-content-group-with-padding {
+    padding-left: 12%;
+    padding-right: 16%; 
+}
+.lhs-content-group-with-padding {
+    padding-left: 0;
+    padding-right: 12%; 
+}

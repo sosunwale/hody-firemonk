@@ -1,0 +1,25 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"backgroundColor":"background","textColor":"foreground","layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group has-foreground-color has-background-background-color has-text-color has-background"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"20px","padding":{"top":"5%","bottom":"5%"}}},"layout":{"inherit":true}} -->
+<div class="wp-block-group alignwide" style="padding-top:5%;padding-bottom:5%"><!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"textTransform":"uppercase"}},"className":"with-bottom-margin has-syncopate-font-family","jetEngineDynamicData":{"content":{"data_source":"custom","macros":"current_meta","meta_key":"hody_discog_video_published_date","filter_output":true,"filter_callback":"date_i18n","date_format":"F, Y"}}} -->
+<h3 class="has-text-align-center with-bottom-margin has-syncopate-font-family" style="text-transform:uppercase">Published: %%content%%</h3>
+<!-- /wp:heading -->
+
+<!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:jet-engine/dynamic-field {"dynamic_field_source":"meta","dynamic_field_post_meta_custom":"hody_discog_video_url","dynamic_field_filter":true,"filter_callback":"wp_oembed_get","dynamic_field_custom":true,"dynamic_field_format":"\u003cdiv class=\u0022vplayer\u0022 style=\u0022width: 600px;\u0022\u003e %s \u003c/div\u003e"} /-->
+
+<!-- wp:jet-engine/dynamic-field {"dynamic_field_source":"meta","dynamic_field_post_meta_custom":"hody_discog_video_source","field_tag":"span","hide_if_empty":true,"dynamic_field_custom":true,"dynamic_field_format":"\u003ca href=\u0022%s\u0022 style=\u0022font-family:Syncopate; color: #fff; font-size: 12px;\u0022\u003eSource\u003c/a\u003e"} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<script>
+const players = Plyr.setup('.vplayer');
+</script>
+<!-- /wp:html -->
+
+<!-- wp:template-part {"slug":"footer"} /-->
