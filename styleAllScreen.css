@@ -41,18 +41,15 @@ h4 {
 }
 
 /* Style Button */
-.wp-block-buttons>.wp-block-button .wp-block-button__link {
+.is-style-fancy-shadow-right {
     /* width: 100%; */
-    box-shadow: 8px 8px 0px 0px var(--wp--preset--color--foreground);
-    border-style: solid;
+    box-shadow: 8px 8px 0px 0px;
+    border: 2px solid;
 }
 
-.wp-block-buttons>.wp-block-button .wp-block-button__link:hover {
+.is-style-fancy-shadow-right:hover {
     /* width: 100%; */
-    color: var(--wp--preset--color--background) !important ;
-    background: var(--wp--preset--color--foreground);
-    box-shadow: 8px 8px 0px 0px var(--wp--preset--color--primary);
-    border-style: solid;
+    box-shadow: 8px 8px 0px 0px var(--wp--preset--color--secondary);
 }
 /* 
 Global Theme Styles

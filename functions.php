@@ -39,16 +39,27 @@ add_action( 'wp_enqueue_scripts', 'hody_firemonk_include_local_fonts');
 // End Here
 
 // Enqueue Frontend style in editor
-
+add_action( 'enqueue_block_assets', 'hody_firemonk_stylesheet' );
 function hody_firemonk_stylesheet() {
     wp_enqueue_style( 'hody_firemonk_theme_block_patterns_front_back',  get_template_directory_uri() . '/style.css'  );
 }
-add_action( 'enqueue_block_assets', 'hody_firemonk_stylesheet' );
 /*
-*add_action('init', 'enqueue_block_assets');
-*function enqueue_block_assets() {
-*	//register style for both front & backend
-*	wp_register_style('hody_firemonk_theme_block_patterns_front_back', get_template_directory_uri() . '/style.css', array('wp-editor'), null );
-*}
+*	Enqueue File for core block vairations
+*
 */
+add_action( 'enqueue_block_editor_assets', 'hosy_discog_custom_guten_enqueue' );
+function hosy_discog_custom_guten_enqueue() {
+    wp_enqueue_script(
+        'core-block-variations',
+        get_stylesheet_directory_uri() . '/assets/js/core-block-variations.js',
+        array( 'wp-blocks' ),
+        filemtime( plugin_dir_path( __FILE__ ) . '/assets/js/core-block-variations.js' )
+    );
 
+    wp_enqueue_script(
+        'core-block-style-variations',
+        get_stylesheet_directory_uri() . '/assets/js/core-block-style-variations.js',
+        array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ),
+        filemtime( plugin_dir_path( __FILE__ ) . '/assets/js/core-block-style-variations.js' )
+    );
+}
